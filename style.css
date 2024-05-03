@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-text-color);
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #f3faff;
+  box-shadow: 0 0 4px #bbd0e2;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+
+.main_nav {
+  justify-content: space-between;
+  padding-block: 8px;
+}
+
+.news_logo img {
+  width: 100px;
+}
+
+.nav_links ul {
+  gap: 16px;
+}
+
+.hover_link {
+  cursor: pointer;
+}
+
+.hover_link:hover {
+  color: var(--secondary-text-color);
+}
+
+.hover_link:active {
+  color: red;
+}
+
+.nav-item.active {
+  color: var(--accent-color);
+}
+.search_bar {
+  height: 32px;
+  gap: 8px;
+}
+
+.news_input {
+  width: 300px;
+  height: 100%;
+  padding-block: 12px;
+  border-radius: 4px;
+  border: 2px solid #bbd0e2;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.news_input:focus {
+  border-color: rgba(6, 80, 154, 0.648);
+}
+
+.news-desc{
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit the number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.search_btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.search_btn:hover {
+  background-color: var(--accent-color-dark);
+}
+
+.search_btn:active {
+  background-color: var(--accent-color-dark);
+}
+
+main {
+  padding-block: 20px;
+  margin-top: 80px;
+}
+
+.cards-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+}
+
+.card {
+  width: 360px;
+  min-height: 400px;
+  box-shadow: 0 0 4px #d4ecff;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px #d4ecff;
+  background-color: #f9fdff;
+  transform: translateY(-2px);
+}
+
+.card-header img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.news-source {
+  margin-block: 12px;
+}
+
+.social-icons{
+  background-color: midnightblue;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #183b56; /* Set background color */
+  height: 300px;
+  color: white; /* Set text color */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.social-icons a {
+  color: #fff; /* Set social icon color */
+  font-size: 24px; /* Set social icon size */
+  margin: 0 10px; /* Add margin between social icons */
+  text-decoration: none;
+  text-align: center;
+}
+
+.social-icons a:hover {
+  color: #bbd0e2; /* Change social icon color on hover */
+}
+
+.f-Nav ul {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center-align navigation links */
+  list-style: none; /* Remove default list styles */
+}
+
+.f-Nav ul li {
+  margin: 0 10px; /* Add margin between navigation links */
+}
+
+.f-Nav ul li a {
+  color: #bbd0e2; /* Set navigation link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.f-Nav ul li a:hover {
+  color: #fff; /* Change navigation link color on hover */
+}
+
+.f-Bottom {
+  text-align: center; /* Center-align bottom text */
+  margin-top: 20px; /* Add margin from the top */
+}
+
+.designer {
+  color: #bbd0e2; /* Set color for designer text */
+}
